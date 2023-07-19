@@ -1,24 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Weather Project</title>
-    <link rel="icon" href="file:///D:/photo/PicsArt_09-16-08.13.58.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="">
+  <link rel="icon" href="images\image.png">
+  <title>Weather Project</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <h1>WEATHER INFORMATION PROJECT</h1>
+<body class="text-center">
+  <div class="form-signin">
+    <img class="mb-4" src="images\image.png" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">WEATHER INFORMATION PROJECT</h1>
+    <div class="card" id="weatherCard">
+        <!-- Weather information will be displayed here -->
+      </div>
     <form action="/" method="post">
-        <label for="cityInput">Country Name: </label>
-        <input id="cityInput" type="text" name="country" placeholder="for India IN">
-        <label for="cityInput">pincode: </label>
-        <input id="cityInput" type="text" name="pincode">
-        <button type="submit">Go</button>
+      <input class="form-control top" type="text" name="country" placeholder="CountryName: for India IN" required
+        autofocus>
+      <input class="form-control bottom" type="text" name="pincode" placeholder="pincode" required>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Go</button>
     </form>
-    <h2>Hints: Click here for Country Name.👇🏻</h2>
-    <button><a href="https://www.iso.org/obp/ui/#search" target="_blank">COUNTRY CODE</a></button>
-    
+    <p>Hints: Click here for Country Name.👇🏻</p>
+    <a href="https://www.iso.org/obp/ui/#search" target="_blank" class="btn btn-info" role="button">COUNTRY CODE</a>
+    <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+
+  </div>
+
 </body>
 
 </html>
