@@ -62,7 +62,7 @@ h1 {
   float: right;
   color: #666;
   font-weight: 300;
-  font-size: 6.59375em;
+  font-size: 6.59375rem;
   /* line-height: .2em; */
   animation: up 2s cubic-bezier(.39, 0, .38, 1) .2s;
   -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .2s;
